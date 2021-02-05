@@ -5,6 +5,7 @@
   margin: 0;
   font-family: "Quicksand";
   color: #333;
+  box-sizing: border-box;
 }
 
 /* Navbar */
@@ -12,7 +13,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 640px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -37,15 +38,19 @@
 
 /* main */
 main {
-  max-width: 600px;
+  max-width: 640px;
   margin: 40px auto;
-  padding: 20px;
 }
 
-/* product */
+/* Products */
+.Products {
+  padding: 20px 3px;
+}
+
 .product {
-  padding: 15px 0;
+  padding: 15px;
   border: 2px solid rgba(0, 0, 0, 0);
+  margin-top: -2px;
 }
 
 .product:hover {
