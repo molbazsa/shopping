@@ -7,6 +7,7 @@
   color: #333;
 }
 
+/* Navbar */
 .Navbar {
   padding: 20px;
   display: flex;
@@ -34,8 +35,36 @@
   color: #037a9a;
 }
 
+/* main */
 main {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+}
+
+/* product */
+.product {
+  padding: 15px 0;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.product:hover {
+  border: 2px solid #f2f2f2;
+}
+
+.product:hover h2 {
+  color: #037a9a;
+}
+
+.product-header {
+  display: flex;
+  align-items: center;
+}
+
+.product-codes {
+  margin-left: auto;
+}
+
+.product-codes span {
+  margin-left: 20px;
 }

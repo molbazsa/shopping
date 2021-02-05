@@ -1,27 +1,36 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Products() {
-  const title = "Üdv a rendszerben!";
-  const [products, setProducts] = useState(50);
-
-  useEffect(() => {
-    console.log(`products = ${products} now`);
-  }, [products]);
-
-  function handleMinus() {
-    setProducts(products - 1);
-  }
-
-  function handlePlus() {
-    setProducts(products + 1);
-  }
+  const [products, setProducts] = useState([
+    {
+      id: 1,
+      barcode: 25638425234,
+      name: "Snickers",
+      description: "csokoládé - 100g",
+    },
+    { id: 2, barcode: 76787256725, name: "Tomi", description: "mosószer - 1L" },
+    {
+      id: 3,
+      barcode: 65432735432,
+      name: "Coca-Cola",
+      description: "üdítő - 1,25L",
+    },
+  ]);
 
   return (
     <div className="Products">
-      <h1>{title}</h1>
-      <p>Jelenleg {products} terméket tartok számon</p>
-      <button onClick={handleMinus}>-</button>
-      <button onClick={handlePlus}>+</button>
+      {products.map((product) => (
+        <div className="product" key={product.id}>
+          <div className="product-header">
+            <h2>{product.name}</h2>
+            <div className="product-codes">
+              <span>Cikkszám: {product.id}</span>
+              <span>Vonalkód: {product.barcode}</span>
+            </div>
+          </div>
+          <p>{product.description}</p>
+        </div>
+      ))}
     </div>
   );
 }
