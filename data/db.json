@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "barcode": 25638425234,
+      "name": "Snickers",
+      "description": "csokoládé - 100g"
+    },
+    {
+      "id": 2,
+      "barcode": 76787256725,
+      "name": "Tomi",
+      "description": "mosószer - 1L"
+    },
+    {
+      "id": 3,
+      "barcode": 65432735432,
+      "name": "Coca-Cola",
+      "description": "üdítő - 1,25L"
+    }
+  ]
+}

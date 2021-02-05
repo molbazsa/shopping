@@ -59,6 +59,7 @@ main {
 
 .product:hover {
   border: 2px solid #f2f2f2;
+  cursor: pointer;
 }
 
 .product:hover h2 {
