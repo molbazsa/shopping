@@ -42,8 +42,12 @@ main {
   margin: 40px auto;
 }
 
-/* Products */
-.Products {
+/* ProductList */
+.ProductList h1 {
+  padding: 0px 17px;
+}
+
+.products {
   padding: 20px 3px;
 }
 
